@@ -1,0 +1,104 @@
+.content-wrapper h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #ffff;
+    background: linear-gradient(90deg, #4f46e5, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.notices-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.notice-card{
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    position: relative;
+    overflow: hidden;
+    border-left: 5px solid #4f46e5;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+body.dark .notice-card{
+    background: #333;
+    
+}
+body.dark .notice-card h3,
+body.dark .notice-card p{
+    color: #ffffff;
+}
+
+
+.notice-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(79,70,229,0.15);
+}
+
+
+
+.notice-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    margin-left: 0;
+    border-right: 1px solid #6b7280 ;
+}
+
+.notice-description{
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+.notice-description p{
+    text-align: justify;
+}
+
+.notice-date{
+    margin-top: 15px;
+    color: #9ca3af;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.notice-date i {
+    font-size: 12px;
+}
+
+.important-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #dc3545;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .notice-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .notice-title{
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+    
+}

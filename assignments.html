@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments | Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/assignments.css">
+</head>
+<body>
+    <div class="container">
+       <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Student Dashboard</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+              
+                <a href="results.html" class="nav-link ">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Results</span>
+                </a>
+                <a href="assignments.html" class="nav-link active">
+                    <i class="fas fa-tasks"></i>
+                    <span>Assignments</span>
+                </a>
+                <a href="courses.html" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Routine</span>
+                </a>
+                <a href="notices.html" class="nav-link">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </a>
+              
+            </nav>
+     
+            <div class="sidebar-footer">
+                <div class="motivation-quote" id="motivationQuote">	"Small progress is still progress."</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-navbar">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                  <div class="header-actions">
+                    <div class="theme-toggle" id="themeToggleHeader">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <h1>Assignments</h1>
+                <div class="assignments-grid" id="assignmentsGrid"></div>
+            </div>
+
+            <div id="assignmentsGrid">
+
+    <div class="assignment-card">
+        <div class="assignment-header">
+            <div class="assignment-title">JavaScript Framework Project</div>
+            <div class="status-badge status-pending">Pending</div>
+        </div>
+
+        <div class="assignment-course">
+            <i class="fas fa-book"></i> Web Development
+        </div>
+
+        <div class="assignment-description">
+            Create a React application with routing and state management.
+        </div>
+
+        <div class="assignment-due">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="due-date">Due: Jun 20, 2026</span>
+                <button class="assignment-btn" ><a href="#">View</a></button>
+
+        </div>
+    </div>
+
+    <div class="assignment-card">
+        <div class="assignment-header">
+            <div class="assignment-title">Database Design Assignment</div>
+            <div class="status-badge status-pending">Pending</div>
+        </div>
+
+        <div class="assignment-course">
+            <i class="fas fa-book"></i> Database Systems
+        </div>
+
+        <div class="assignment-description">
+            Design an ER diagram and implement SQL queries.
+        </div>
+
+        <div class="assignment-due">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="due-date">Due: Jun 18, 2026</span>
+            <button class="assignment-btn" ><a href="#">View</a></button>
+
+        </div>
+    </div>
+
+    <div class="assignment-card">
+        <div class="assignment-header">
+            <div class="assignment-title">Algorithm Analysis Report</div>
+            <div class="status-badge status-submitted">Submitted</div>
+        </div>
+
+        <div class="assignment-course">
+            <i class="fas fa-book"></i> Algorithms
+        </div>
+
+        <div class="assignment-description">
+            Write a report on sorting algorithm complexities.
+        </div>
+
+        <div class="assignment-due">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="due-date">Due: Jun 10, 2026</span>
+            <button class="assignment-btn" ><a href="#">View</a></button>
+
+        </div>
+    </div>
+
+    <div class="assignment-card">
+        <div class="assignment-header">
+            <div class="assignment-title">Network Configuration Lab</div>
+            <div class="status-badge status-pending">Pending</div>
+        </div>
+
+        <div class="assignment-course">
+            <i class="fas fa-book"></i> Computer Networks
+        </div>
+
+        <div class="assignment-description">
+            Configure network topology using Cisco Packet Tracer.
+        </div>
+
+        <div class="assignment-due">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="due-date">Due: Jun 15, 2026</span>
+                        <button class="assignment-btn" ><a href="#">View</a></button>
+
+        </div>
+    </div>
+
+    <div class="assignment-card">
+        <div class="assignment-header">
+            <div class="assignment-title">OS Process Scheduling</div>
+            <div class="status-badge status-pending">Pending</div>
+        </div>
+
+        <div class="assignment-course">
+            <i class="fas fa-book"></i> Operating Systems
+        </div>
+
+        <div class="assignment-description">
+            Implement CPU scheduling algorithms in C.
+        </div>
+
+        <div class="assignment-due">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="due-date">Due: Jun 22, 2026</span>
+                        <button class="assignment-btn" ><a href="#">View</a></button>
+
+        </div>
+    </div>
+
+</div>
+        </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+    <script src="js/assignments.js"></script>
+</body>
+</html>

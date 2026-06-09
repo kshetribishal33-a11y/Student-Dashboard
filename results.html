@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/results.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Student Dashboard</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                
+                <a href="results.html" class="nav-link active">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Results</span>
+                </a>
+               
+                <a href="assignments.html" class="nav-link">
+                    <i class="fas fa-tasks"></i>
+                    <span>Assignments</span>
+                </a>
+                <a href="courses.html" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Routine</span>
+                </a>
+                <a href="notices.html" class="nav-link">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </a>
+               
+            </nav>
+           
+            <div class="sidebar-footer">
+                <div class="motivation-quote" id="motivationQuote">✨ "Education is the passport to the future"</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-navbar">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="theme-toggle" id="themeToggleHeader">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <div class="results-header">
+                    <h1>Academic Results</h1>
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search by subject..."
+                         onkeyup="filterResults()">
+                    </div>
+                </div>
+
+                <div class="gpa-card">
+                    <div class="gpa-circle">
+                        <div class="gpa-value">3.8</div>
+                        <div class="gpa-label">CGPA</div>
+                    </div>
+                    <div class="gpa-details">
+                        <div class="gpa-item"><span>Semester GPA:</span><strong>3.85</strong></div>
+                        <div class="gpa-item"><span>Total Credits:</span><strong>120</strong></div>
+                        <div class="gpa-item"><span>Credits Earned:</span><strong>96</strong></div>
+                        <div class="gpa-item"><span>Percentage:</span><strong>82%</strong></div>
+                    </div>
+                </div>
+
+                <div class="results-table-container">
+                    <h2>Subject-wise Marks</h2>
+                    <div class="table-responsive">
+                    <table class="results-table">
+                        <thead>
+                            <tr><th>Subject Code</th><th>Subject Name</th><th>Internal (30)</th><th>External (70)</th><th>Total (100)</th><th>Grade</th><th>Status</th></tr>
+                        </thead>
+                
+                        <tbody id="resultsTableBody">
+                            <tr>
+                                <td>CS301</td>
+                                <td>Data Structures</td>
+                                <td>25/30</td>
+                                <td>62/70</td>
+                                <td>87/100</td>
+                                <td>A</td>
+                                <td>Pass</td>
+                            </tr>
+
+                            <tr>
+                                <td>CS302</td>
+                                <td>Java</td>
+                                <td>22/30</td>
+                                <td>58/70</td>
+                                <td>80/100</td>
+                                <td>A</td>
+                                <td>Pass</td>
+                            </tr>
+
+                            <tr>
+                                <td>CS303</td>
+                                <td>Database Systems</td>
+                                <td>24/30</td>
+                                <td>60/70</td>
+                                <td>84/100</td>
+                                <td>A</td>
+                                <td>Pass</td>
+                            </tr>
+                
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+    <script src="js/results.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/notices.css">
+</head>
+<body>
+    <div class="container">
+           <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Student Dashboard</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+              
+                <a href="results.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Results</span>
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <i class="fas fa-tasks"></i>
+                    <span>Assignments</span>
+                </a>
+                <a href="courses.html" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Routine</span>
+                </a>
+                <a href="notices.html" class="nav-link active">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </a>
+                
+            </nav>
+         
+            <div class="sidebar-footer">
+                <div class="motivation-quote" id="motivationQuote">	"Stay informed. An informed student is an empowered student."</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-navbar">
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+                
+                <div class="header-actions">
+                    <div class="theme-toggle" id="themeToggleHeader">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="content-wrapper">
+                <h1>Notice Board</h1>
+                <div class="notices-container" id="noticesContainer">
+
+               <div class="notice-card">
+                 <div class="notice-title">
+                    <h3>Semester Examination Routine Published</h3>
+                </div>
+
+                <div class="notice-description">
+                    <p>The examination routine for the current semester has been published.
+                    Students are advised to check the schedule and prepare accordingly.</p>
+                </div>
+                <div class="notice-date">June-10, 2026</div>
+               </div>
+
+
+                <div class="notice-card">
+                    <div class="notice-title">
+                        <h3>Assignment Submission Reminder</h3>
+                    </div>
+
+                    <div class="notice-description">
+                        <p>Students are requested to submit all pending assignments before the
+                        specified deadline to avoid late submission penalties.
+                        </p>
+                    </div>
+                        <div class="notice-date">June-07, 2026</div>
+
+                </div>
+
+
+                <div class="notice-card">
+                <div class="notice-title">
+                    <h3>Scholarship Application Open</h3>
+                </div>
+                <div class="notice-description">
+                    <p>  Applications  open for eligible students.
+                            Interested students are encouraged to submit their applications through the student portal before the deadline.</p>
+                </div>
+                <div class="notice-date">June-03, 2026</div>
+                </div>
+
+                <div class="notice-card">
+                <div class="notice-title">
+                    <h3>Workshop on Artificial Intelligence</h3>
+                </div>
+                <div class="notice-description">
+                    <p>   A workshop on Artificial Intelligence and emerging technologies will
+                         be conducted next week. Interested students are encouraged to participate.
+                    </p>
+                </div>
+                <div class="notice-date">June-08, 2026</div>
+                </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+
+</body>
